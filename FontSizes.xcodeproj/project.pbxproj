@@ -11,6 +11,7 @@
 		5C28CDAD2898658300CD64A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28CDAC2898658300CD64A9 /* ContentView.swift */; };
 		5C28CDAF2898658400CD64A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C28CDAE2898658400CD64A9 /* Assets.xcassets */; };
 		5C28CDB22898658400CD64A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C28CDB12898658400CD64A9 /* Preview Assets.xcassets */; };
+		5C28CDBA2898678F00CD64A9 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28CDB92898678F00CD64A9 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		5C28CDAE2898658400CD64A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C28CDB12898658400CD64A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C28CDB32898658400CD64A9 /* FontSizes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FontSizes.entitlements; sourceTree = "<group>"; };
+		5C28CDB92898678F00CD64A9 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		5C28CDBB2898680D00CD64A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +55,9 @@
 		5C28CDA92898658300CD64A9 /* FontSizes */ = {
 			isa = PBXGroup;
 			children = (
+				5C28CDBB2898680D00CD64A9 /* Info.plist */,
 				5C28CDAA2898658300CD64A9 /* FontSizesApp.swift */,
+				5C28CDB92898678F00CD64A9 /* StatusBarController.swift */,
 				5C28CDAC2898658300CD64A9 /* ContentView.swift */,
 				5C28CDAE2898658400CD64A9 /* Assets.xcassets */,
 				5C28CDB32898658400CD64A9 /* FontSizes.entitlements */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C28CDAD2898658300CD64A9 /* ContentView.swift in Sources */,
+				5C28CDBA2898678F00CD64A9 /* StatusBarController.swift in Sources */,
 				5C28CDAB2898658300CD64A9 /* FontSizesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +280,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FontSizes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +309,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FontSizes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
