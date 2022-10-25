@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FontList: View {
     var body: some View {
         VStack {
             Group {
@@ -43,13 +43,22 @@ struct ContentView: View {
                 Text("Caption 2 (11)")
                     .font(.caption2)
             }
+            
+            Link("Made by Flo writes Code",
+                 destination: URL(string: "https://twitter.com/FloWritesCode")!)
+            .foregroundColor(.secondary)
+            
+            Button("Quit") {
+                NSApplication.shared.terminate(nil)
+            }
         }
+        .padding(8)
         .frame(width: 200, height: 280)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FontList()
     }
 }
