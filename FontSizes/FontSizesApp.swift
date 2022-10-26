@@ -12,5 +12,6 @@ struct FontSizesApp: App {
         MenuBarExtra("", systemImage: "graduationcap") {
             FontList()
         }
+        .menuBarExtraStyle(.window)
     }
 }

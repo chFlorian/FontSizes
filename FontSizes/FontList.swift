@@ -4,43 +4,43 @@ import SwiftUI
 
 struct FontList: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Group {
-                Text("Large Title (34)")
+                HighlightedText(text: "Large Title (34)", copiedValue: ".font(.largeTitle)")
                     .font(.largeTitle)
                 
-                Text("Title (28)")
+                HighlightedText(text: "Title (28)", copiedValue: ".font(.title)")
                     .font(.title)
                 
-                Text("Title 2 (22)")
+                HighlightedText(text: "Title 2 (22)", copiedValue: ".font(.title2)")
                     .font(.title2)
                 
-                Text("Title 3 (20)")
+                HighlightedText(text: "Title 3 (20)", copiedValue: ".font(.title3)")
                     .font(.title3)
             }
             
-            Text("Body (17)")
+            HighlightedText(text: "Body (17)", copiedValue: ".font(.body)")
                 .font(.body)
             
             Group {
-                Text("Headline (17)")
+                HighlightedText(text: "Headline (17)", copiedValue: ".font(.headline)")
                     .font(.headline)
                 
-                Text("Callout (16)")
+                HighlightedText(text: "Callout (16)", copiedValue: ".font(.callout)")
                     .font(.callout)
                 
-                Text("Subheadline (15)")
+                HighlightedText(text: "Subheadline (15)", copiedValue: ".font(.subheadline)")
                     .font(.subheadline)
             }
             
-            Text("Footnote (13)")
+            HighlightedText(text: "Footnote (13)", copiedValue: ".font(.footnote)")
                 .font(.footnote)
             
             Group {
-                Text("Caption (12)")
+                HighlightedText(text: "Caption (12)", copiedValue: ".font(.caption)")
                     .font(.caption)
                 
-                Text("Caption 2 (11)")
+                HighlightedText(text: "Caption 2 (11)", copiedValue: ".font(.caption2)")
                     .font(.caption2)
             }
             
@@ -53,7 +53,7 @@ struct FontList: View {
             }
         }
         .padding(8)
-        .frame(width: 200, height: 280)
+        .frame(width: 200)
     }
 }
 
