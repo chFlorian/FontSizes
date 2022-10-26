@@ -17,6 +17,10 @@ struct AppDescriptionView: View {
                 LabeledSection(title: "Menu Bar",
                                systemImage: "ellipsis.rectangle",
                                description: "Easy access to all SwiftUI Fonts right in the menu bar.")
+                
+                LabeledSection(title: "Copy Modifier",
+                               systemImage: "rectangle.portrait.on.rectangle.portrait.fill",
+                               description: "Click on a font to copy the corresponding ViewModifier to your clipboard.")
             }
             
             Spacer()
